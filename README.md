@@ -55,6 +55,7 @@ This allows to compute the overall mean and standard deviation without keeping t
 As most of the torchvision models, the original ResNet expects a three channel input in **conv1**. <br />
 However, our X-Ray image data has only one channel.
 Thus we need to change the in_channel parameter from 3 to 1.
+
 4 outputs: We need to estimate the location of the heart (xmin, ymin, xmax, ymax).
 
 Loss function: We are going to use the L2 loss (Mean Squared Error), as we are dealing with continuous values.
