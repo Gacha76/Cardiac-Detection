@@ -1,12 +1,12 @@
 ## Introduction
 In this project we will preprocess the data for the cardiac detection task. Then, we will create a custom DataSet which will load and return an X-Ray image together with the location of the heart.
 
-At first we download the data from kaggle (https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data)
+At first we download the data from [kaggle](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data)
 
 Dataset:
 Wang X, Peng Y, Lu L, Lu Z, Bagheri M, Summers RM. ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases. IEEE CVPR 2017, http://openaccess.thecvf.com/content_cvpr_2017/papers/Wang_ChestX-ray8_Hospital-Scale_Chest_CVPR_2017_paper.pdf
 
-Some example images from dataset :<br/> ![output](https://github.com/Gacha76/Cardiac-Detection/assets/114499152/684f739f-88e7-4798-abec-898c68346bf8)
+Some example images from dataset :<br/> ![output](images/images.png)
 
 We provide bounding boxes for around 500 images of the RSNA pneumonia detection challenge dataset.
 
@@ -16,12 +16,12 @@ New Dataset:
 <td width="50%">      
 &nbsp; 
 <br>
-<img src="https://github.com/Gacha76/Cardiac-Detection/assets/114499152/caf1a4ba-ee09-4001-81d4-b2c420fb1fb1">
+<img src="images/img1.png">
 
 </td> 
 <td width="50%">
 <br>
-<img src="https://github.com/Gacha76/Cardiac-Detection/assets/114499152/09b979fd-2b4c-4ee1-b921-dccd1beee473">
+<img src="images/img2.png">
 
 </td>
 </tr>
@@ -30,13 +30,13 @@ New Dataset:
 <td width="50%">      
 &nbsp; 
 <br>
-<img src="https://github.com/Gacha76/Cardiac-Detection/assets/114499152/304ad79f-89b4-4e4b-9501-986afc3d137e">
+<img src="images/img3.png">
 
 
 </td> 
 <td width="50%">
 <br>
-<img src="https://github.com/Gacha76/Cardiac-Detection/assets/114499152/014f3b17-9822-4cef-b7b2-63056950c1a0">
+<img src="images/img4.png">
 
 
 </td>
@@ -60,7 +60,7 @@ Thus we need to change the in_channel parameter from 3 to 1.
 
 Loss function: We are going to use the L2 loss (Mean Squared Error), as we are dealing with continuous values.
 
-After applying data augmentation and normalization: <br/> ![Screenshot 2024-07-04 212516](https://github.com/Gacha76/Cardiac-Detection/assets/114499152/90199ba6-9acc-4879-9a6e-d752ca333ae3)
+After applying data augmentation and normalization: <br/> ![output](images/aug_image.png)
 
 
-Final result: <br/> ![Screenshot 2024-07-04 212547](https://github.com/Gacha76/Cardiac-Detection/assets/114499152/0132c3df-be9c-4dbf-9e20-467e6e4a3157)
+Final result: <br/> ![output](images/output.png)
